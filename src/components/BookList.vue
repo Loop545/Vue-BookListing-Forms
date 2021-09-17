@@ -2,6 +2,9 @@
   <div>
     <h1>{{title}}</h1>
     <ul>
+      <book-item v-for='book in books' :key='book.id' :book='book'>
+      </book-item>   
+    </ul>
       <hr>
       <h2>Filtered Books By Ownership</h2>
       <select v-model="holding">
@@ -10,9 +13,6 @@
       <ul>
         <book-item v-for='book in filteredBooks' :key='book.id' :book='book'>
       </ul>
-      <book-item v-for='book in books' :key='book.id' :book='book'>
-      </book-item>
-    </ul>
     <br><hr>
     <book-form @addBook='appendBook'></book-form>
   </div>
