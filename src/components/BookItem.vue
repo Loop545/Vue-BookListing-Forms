@@ -1,13 +1,15 @@
 <template>
   <li>
     {{book.title}} : {{book.author}}
+    <span v-if="bookData.finishedReading">Read</span>
+    <span v-else>Not Read</span>
   </li>
 </template>
 
 <script>
 export default {
-  name: 'BookItem',
-  props: ['book'],
+  name: "BookItem",
+  props: ["book"]
 };
 </script>
 
