@@ -24,17 +24,17 @@ export default {
         {
           title: "Self-Reliance",
           author: "Ralph Waldo Emerson",
-          finishedreading: true
+          finishedReading: true
         },
         {
           title: "American Gods",
           author: "Neil Gaiman",
-          finishedreading: false
+          finishedReading: false
         },
         {
           title: "Amusing Ourselves to Death",
           author: "Neil Postman",
-          finishedreading: true
+          finishedReading: true
         }
       ]
     };
@@ -48,7 +48,7 @@ export default {
       this.books.push({
         title: bookData.bookTitle,
         author: bookData.bookAuthor,
-        finishedreading: bookData.finishedreading
+        finishedReading: bookData.finishedReading
       });
     }
   }
